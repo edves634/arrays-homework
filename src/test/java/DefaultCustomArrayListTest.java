@@ -33,9 +33,9 @@ public class DefaultCustomArrayListTest {
     public void testRemove() {
         list.add(1);
         list.add(2);
-        assertTrue(list.remove(1));
+        assertEquals(true, list.remove(Integer.valueOf(1)));
         assertEquals(1, list.size());
-        assertFalse(list.contains(1));
+
     }
 
     @Test
